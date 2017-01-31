@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  repl:
+    image: 'clojure'
+    command: 'lein repl'
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
